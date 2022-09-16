@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOA,KAAK;EAFH,YAAmB,EAAG,IAAU;;AAShC,UAAc;EACZ,gBAAgB,EAAE,qBAAyB",
+"sources": ["inter.scss"],
+"names": [],
+"file": "inter.css"
+}

@@ -1,0 +1,19 @@
+// interpolation
+
+
+// css property interpolation
+@mixin margin($position, $unit){
+  margin-#{$position} : $unit + px;
+}
+.test{
+  @include margin(right, 20)
+}
+
+
+//css setector interpolation
+@mixin set-icon($name){
+  .icon-#{$name}{
+    background-image: url("/icon/#{$name}.png");
+  }
+}
+@include set-icon(duck);

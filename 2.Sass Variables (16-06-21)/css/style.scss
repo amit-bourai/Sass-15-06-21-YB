@@ -1,0 +1,132 @@
+//Variables:
+$main-color: green;
+$border-color: transprent;
+$main-font: vardhana;
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background: slategrey;
+  font: 18px/24px $main-font;
+}
+.wrapper{
+  border: 1px solid $border-color;
+  width: 1000px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+#top-bar{
+  color: $main-color;
+}
+.header{
+  background-color: $main-color;
+  color: #fff;
+  height: 100px;
+  font-family: $main-font;
+  border-bottom: 1px solid $border-color;
+}
+.header h1{
+  padding: 30px 0 0 20px;
+  margin: 0;
+}
+#menu{
+  background-color: mediumpurple;
+  border-bottom: 1px solid $border-color;
+}
+#menu ul{
+  margin: 0;
+  padding: 0;
+}
+#menu li{
+  display: inline-block;
+}
+#menu li a{
+  color: #fff;
+  display: block;
+  padding: 10px 13px;
+  text-decoration: none;
+}
+#menu li a:hover{
+  background-color: $main-color;
+}
+#content{
+  width: 795px;
+  min-height: 500px;
+  padding: 15px;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  text-align: justify;
+}
+#content h2{
+  font-family: $main-font;
+}
+#content ::selection{
+  background: $main-color;
+  color:#fff;
+}
+#sidebar{
+  width: 200px;
+  min-height: 528px;
+  background: Lavender;
+  float: right;
+  border-left: 1px solid $border-color;
+}
+#sidebar a{
+  text-decoration: none;
+  color: black;
+}
+#sidebar a:hover{
+  color:$main-color;
+}
+#footer{
+  background-color: $main-color;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 14px;
+  clear: both;
+  border-top: 1px solid $border-color;
+}
+
+@media screen and (max-width:1020px){
+  .wrapper{
+    width: 800px;
+  }
+  #content{
+    width: 80%;
+  }
+  #sidebar{
+    width: 18%
+  }
+}
+
+@media screen and (max-width: 810px){
+    .wrapper{
+      width: 500px;
+    }
+    #content{
+      width: 65%;
+    }
+    #sidebar{
+      width: 34%;
+    }
+}
+@media screen and (max-width: 510px){
+  .wrapper{
+    width: auto;
+  }
+  #content{
+    width: 100%;
+    float: none;
+  }
+  #sidebar{
+    width: 100%;
+    float: none;
+  }
+  .header h1{
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+}

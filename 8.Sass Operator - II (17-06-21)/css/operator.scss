@@ -1,0 +1,23 @@
+// string operator
+$var1 : 10;
+
+.test{
+  padding: $var1 + px;
+}
+
+// numaric operator
+$var2 : 10;
+$var3 : 2;
+
+.test{
+  padding: $var2 + $var3 + px;
+  padding: $var2 - $var3 + px;
+  padding: $var2 * $var3 + px;
+  padding: $var2 / $var3 + px;
+  padding: $var2 % $var3 + px;
+  font-size: $var2 + px;
+}
+
+.test h1{
+  font-size:  $var2 * 2 + px;
+}

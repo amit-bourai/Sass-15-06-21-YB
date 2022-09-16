@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAqBA,WAAW;EACT,KAAK,EAAE,KAAsB;;AAG/B,gBAAgB;EACd,KAAK,EAAE,KAA2B;;AAGpC,iBAAiB;EACf,KAAK,EAAE,KAA4B",
+"sources": ["fubction.scss"],
+"names": [],
+"file": "fubction.css"
+}

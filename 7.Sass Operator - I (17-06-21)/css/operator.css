@@ -1,0 +1,28 @@
+.abc1 {
+  padding: true;
+  padding: false;
+  padding: false;
+  padding: true;
+  padding: true;
+  padding: true;
+  padding: false;
+  padding: true; }
+
+.xyz1 {
+  padding: true;
+  padding: false;
+  padding: false;
+  padding: true;
+  padding: true;
+  padding: false; }
+
+.abc2 {
+  padding: true;
+  padding: true;
+  padding: false;
+  padding: true;
+  padding: false;
+  padding: false;
+  padding: true; }
+
+/*# sourceMappingURL=operator.css.map */
