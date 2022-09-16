@@ -1,0 +1,38 @@
+// map function
+
+$font-weights: ("regular" : 400, "medium" : 500, "bold" : 700);
+$light-weights: ("lightest" : 100, "light" : 300);
+
+$merge: map-merge($font-weights,  $light-weights);
+
+$mr: map-remove($font-weights, "regular");
+
+.test{
+  //font-weight: map-get($map, $key);
+  // font-weight: map-get($font-weights, "bold"); //.test { font-weight: 700; }
+  // font-weight: map-get($font-weights, "bolder"); //Null
+
+
+  // font-weight: map-keys($font-weights);
+
+
+  // font-weight: map-values($font-weights);
+
+
+  // font-weight: map-keys($merge);
+  // font-weight: map-values($merge);
+
+
+  // font-weight: map-keys($mr);
+  // font-weight: map-values($mr);
+
+
+  // font-weight: map-has-key($font-weights,"bold"); //.test { font-weight: true; }
+  // font-weight: map-has-key($font-weights,"bolder"); //.test { font-weight: false; }
+
+
+
+  //map with list function
+  font-weight: nth($font-weights, 2); //.test { font-weight: "medium" 500; }
+
+}

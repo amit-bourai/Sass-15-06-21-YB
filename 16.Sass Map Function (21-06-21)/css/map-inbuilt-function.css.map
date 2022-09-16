@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AASA,KAAK;EA0BH,WAAW,EAAE,YAAqB",
+"sources": ["map-inbuilt-function.scss"],
+"names": [],
+"file": "map-inbuilt-function.css"
+}

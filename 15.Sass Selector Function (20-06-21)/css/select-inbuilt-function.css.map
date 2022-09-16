@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAsCA,gEAAY;EACV,KAAK,EAAE,IAAI",
+"sources": ["select-inbuilt-function.scss"],
+"names": [],
+"file": "select-inbuilt-function.css"
+}

@@ -1,0 +1,11 @@
+// @for dir
+@for $i from 1 through 4{
+// @for $i from 1 to 4{
+// if we use "to" it count, 1 to 4 = 1, 2, 3.
+  .list-#{$i}{
+    width: 100px * $i;
+    background: darken(pink, $i * 10%);
+    padding: 10px * $i;
+    margin: 10px;;
+  }
+}

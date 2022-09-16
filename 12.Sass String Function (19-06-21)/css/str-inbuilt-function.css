@@ -1,0 +1,21 @@
+.test {
+  font-family: "Arial";
+  font-family: Arial;
+  font-family: .abc;
+  font-family: "ARIAL";
+  font-family: ARIAL;
+  font-family: arial;
+  font-family: 5;
+  font-family: 14;
+  font-family: 1;
+  font-family: 11;
+  font-family: 2;
+  font-family: "Helvetica Mono Neue";
+  font-family: "He Monolvetica Neue";
+  font-family: "lvetica Neue";
+  font-family: " Neue";
+  font-family: "lvetica ";
+  font-family: "lvetic";
+  font-family: uokdukwua; }
+
+/*# sourceMappingURL=str-inbuilt-function.css.map */

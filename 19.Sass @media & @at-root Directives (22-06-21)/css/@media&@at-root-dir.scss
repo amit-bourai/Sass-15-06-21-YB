@@ -1,0 +1,63 @@
+// @media
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1150px){
+    width: 900px;
+
+  }
+
+  @media screen and (max-width: 950px){
+    width: 700px;
+
+  }
+}
+
+
+// @at-root
+
+// Eg.1
+.item{
+  color: red;
+
+  @at-root{
+    .item-wapper{
+      color: green;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .item-child{
+    background: pink;
+  }
+}
+
+
+// Eg.2
+@media print{
+  .item-wapper{
+    @at-root{
+      .item{
+        color: red;
+      }
+    }
+  }
+}
+
+// Eg.3
+@media print{
+  .container{
+    font-size: 12px;
+    color: green;
+
+    @at-root(without : media){
+      font-size: 15px;
+      color: black;
+    }
+  }
+}

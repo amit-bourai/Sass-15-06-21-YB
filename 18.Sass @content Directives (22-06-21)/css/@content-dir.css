@@ -1,0 +1,31 @@
+.abc {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-style: dashed; }
+
+.block {
+  color: green; }
+
+#menu .block {
+  color: green; }
+
+.button {
+  border: 1px solid black; }
+  .button:hover {
+    border-width: 2px; }
+
+body {
+  background: gray; }
+
+@media screen and (max-width: 1300px) {
+  body {
+    background: red; } }
+@media screen and (max-width: 1000px) {
+  body {
+    background: green; } }
+@media screen and (max-width: 700px) {
+  body {
+    background: yellow; } }
+
+/*# sourceMappingURL=@content-dir.css.map */

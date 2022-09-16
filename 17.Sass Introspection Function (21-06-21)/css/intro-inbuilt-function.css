@@ -1,0 +1,8 @@
+.test {
+  padding: 10px;
+  padding: "Arial";
+  padding: 10px 20px 30px;
+  padding: ("regular": 400, "medium": 500);
+  padding: null; }
+
+/*# sourceMappingURL=intro-inbuilt-function.css.map */

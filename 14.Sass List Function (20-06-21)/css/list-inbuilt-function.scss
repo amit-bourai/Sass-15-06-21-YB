@@ -1,0 +1,57 @@
+// list function
+// list index no. start from 1
+$list: 10px, 20px, 30px;
+$list2: [40px 50px 60px];
+
+.test{
+  // padding: length($list);
+  // padding: length((width:10px,height:20px));
+
+
+  // padding: nth($list, 1);
+  // padding: nth($list, 2);
+  // padding: nth($list, 3);
+  // padding: nth($list, -1);
+  // padding: nth($list, -2);
+  // padding: nth($list, -3);
+  // padding: nth([list1,list2,list3], -1);
+
+
+ // padding: set-nth($list, 1, 2em);
+ // padding: set-nth((Helvatica, Arial, Verdhana), -1, Roboto);
+
+
+ // padding: join($list, $list2);
+ // padding: join(1 2 3, 4 5);
+ // padding: join((1 2 3), (4 5));
+ // padding: join((1, 2, 3), (4 5));
+ // padding: join((1, 2, 3), (4 5), space);
+ // padding: join((1, 2, 3), (4 5), auto);//auto default vaalue
+ // padding: join((1 2 3), (4 5), comma);
+
+
+ // padding: append($list, 70px);
+ // padding: append($list, 70px 80px);
+ // padding: append($list, 70px 80px, comma);
+ // padding: append($list, 70px 80px, space);
+ // padding: append((red, green), blue);
+
+
+ // padding: zip($list, $list2);
+ // padding: zip((red,green,blue),(10px, 15px, 5px));
+ // padding: zip(red green blue,10px 15px 5px);
+
+
+ // padding: index($list, 20px);
+ // padding: index($list, 30px);
+ // padding: index($list, 30);
+ // padding: index($list, 50);
+
+
+ // padding: list-separator($list);
+ // padding: list-separator($list2);
+
+
+ // padding: is-bracketed($list);
+ // padding: is-bracketed($list2);
+}

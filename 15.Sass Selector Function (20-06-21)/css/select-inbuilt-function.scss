@@ -1,0 +1,41 @@
+// selector function
+// $selector : selector-nest("ul","li"); //ul li
+// $selector : selector-nest(".abc, .xyz","p"); //.abc:hover
+// $selector : selector-nest(".abc","&:hover"); //.abc:hover
+// $selector : selector-nest(".abc","&_xyz"); //a.active
+
+
+// $selector : selector-append("a",".active"); //a.active
+// $selector : selector-append(".abc","_copy"); //.abc_copy
+// $selector : selector-append(".abc", "_copy, _image"); //.abc_copy, .abc_image
+
+
+// $selector : selector-replace("a.abc", ".abc", ".link"); //a.link
+// $selector : selector-replace("a.abc", "h1", "h2"); //a.abc
+// $selector : selector-replace(".abc .info", ".info", ".xyz"); //.abc .xyz
+// $selector : selector-replace(".abc .info", ".info", ".xyz li"); //.abc .xyz li, .xyz .abc li
+
+
+// $selector : is-superselector("a","a.active"); //true {  width: 10px; }
+// $selector : is-superselector("a.active","a"); //false {  width: 10px; }
+// $selector : is-superselector("a","nav a"); //true {  width: 10px; }
+// $selector : is-superselector("a","nav a");  //true {  width: 10px; }
+// $selector : is-superselector("nav a","a");  //false {  width: 10px; }
+
+
+// $selector : simple-selectors("a.abc");  //a, .abc
+
+
+// $selector : selector-unify("a",".active");  //a.active
+// $selector : selector-unify("a.active","a.disable");  //a.active.disable
+// $selector : selector-unify("a","h1");  //Error
+// $selector : selector-unify(".active a",".main a");  //.active .main a, .main .active a
+
+
+// $selector : selector-extend("a.disable","a",".link");  //a.disable, .disable.link
+// $selector : selector-extend("a.disable","h1","h2");  //a.disable
+$selector : selector-extend(".abc .info",".info",".content nav.sidebar");  //.abc .info, .abc .content nav.sidebar, .content .abc nav.sidebar
+
+#{$selector}{
+  width: 10px;
+}

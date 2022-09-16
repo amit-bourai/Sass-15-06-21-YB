@@ -1,0 +1,45 @@
+// number function
+
+.test{
+  margin: abs(-10);
+  margin: abs(10);
+
+  margin: ceil(4.1) + px;
+  margin: ceil(4.2) + px;
+  margin: ceil(4.4) + px;
+  margin: ceil(4.0) + px;
+
+  margin: floor(3.4) + px;
+  margin: floor(3.8) + px;
+  margin: floor(3.1) + px;
+
+  margin: round(3.1) + px;
+  margin: round(3.6) + px;
+  margin: round(3.5) + px;
+  margin: round(3.45) + px;
+
+  margin: max(1px,4px);
+  margin: max(1px,4px,50px);
+
+  margin: min(1px,4px,50px);
+  margin: min(10px,4px,50px);
+
+  margin: percentage(0.2);
+  margin: percentage(100px/50px);
+
+  margin: comparable(1px,2px);
+  margin: comparable(1px,2em);
+  margin: comparable(1mm,2cm);
+
+  margin: random();
+  margin: random(10);
+  margin: random(100);
+
+  margin: unit(100);
+  margin: unit(100px);
+  margin: unit(100em);
+  margin: unit(100em * 2px);
+
+  margin: unitless(100em);
+  margin: unitless(100);
+}

@@ -1,0 +1,47 @@
+// introsopection function
+
+ $num: 10px;
+ $char: "Arial";
+ $list: 10px 20px 30px;
+ $map: ("regular" : 400, "medium" : 500);
+
+ @mixin border-radius{
+   border-radius: 5px;
+ }
+@function add($a,$b){
+  @return $a + $b;
+}
+
+ .test{
+   // padding: variable-exists(num); //.test { padding: true; }
+   // padding: variable-exists(char); //.test { padding: true; }
+   // padding: variable-exists(chars); //.test { padding: false; }
+   // $num: 10px; padding: variable-exists(num); //.test { padding: true; }
+
+
+   // $num: 10px; padding: global-variable-exists(num); //.test { padding: false; }
+  // padding: global-variable-exists(char); //.test { padding: true; }
+
+
+  // padding: mixin-exists(char); //.test { padding: false; }
+  // padding: mixin-exists(border-radius); //.test { padding: true; }
+  // padding: mixin-exists(border-radiu); //.test { padding: false; }
+
+
+  // padding: function-exists(border-radiu); //.test { padding: false; }
+  // padding: function-exists(add); //.test { padding: true; }
+  // padding: function-exists(added); //.test { padding: false; }
+
+
+  // padding: type-of($num); //.test { padding: number; }
+  // padding: type-of($char); //.test { padding: char; }
+  // padding: type-of($list); //.test { padding: list; }
+  // padding: type-of($map); //.test { padding: map; }
+
+
+  padding: inspect($num); //.test { padding: 10px; }
+  padding: inspect($char); //.test { padding: "Arial"; }
+  padding: inspect($list); //.test{ padding: 10px 20px 30px; }
+  padding: inspect($map); //.test{ padding: ("regular" : 400, "medium" : 500); }
+  padding: inspect(null); //.test{ padding: null; }
+ }

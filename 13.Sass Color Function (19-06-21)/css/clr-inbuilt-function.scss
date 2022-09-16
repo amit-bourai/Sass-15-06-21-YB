@@ -1,0 +1,51 @@
+// $base-color: pink;
+// $base-color: green;
+// $base-color: #ad4038;
+// $base-color: green;
+$base-color: #ff8800;
+
+#first, #second{
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+#first{
+  background: $base-color;
+}
+
+#second{
+// background: darken($base-color,30);
+
+// background: lighten($base-color,60);
+
+// background: adjust-hue($base-color,80);
+
+// background: adjust-hue($base-color,60);
+
+// background: saturate($base-color,90);
+
+// background: desaturate($base-color,100);
+
+// background: mix($base-color,yellow,50);
+
+// background: transparentize($base-color,0.1);
+
+
+
+//function not in use,
+// background: red($base-color);
+
+// background: green($base-color);
+
+// background: blue($base-color);
+
+// background: hue($base-color);
+
+// background: saturation($base-color);
+
+// background: lightness($base-color);
+
+background: alpha($base-color);
+}

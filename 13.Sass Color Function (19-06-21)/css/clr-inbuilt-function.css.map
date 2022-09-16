@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,eAAe;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,cAAc;;AAGxB,MAAM;EACJ,UAAU,EAVC,OAAO;;AAapB,OAAO;EAgCP,UAAU,EAAE,CAAkB",
+"sources": ["clr-inbuilt-function.scss"],
+"names": [],
+"file": "clr-inbuilt-function.css"
+}

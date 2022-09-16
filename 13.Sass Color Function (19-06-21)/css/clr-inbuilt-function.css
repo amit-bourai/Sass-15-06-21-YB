@@ -1,0 +1,13 @@
+#first, #second {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #000; }
+
+#first {
+  background: #ff8800; }
+
+#second {
+  background: 1; }
+
+/*# sourceMappingURL=clr-inbuilt-function.css.map */
